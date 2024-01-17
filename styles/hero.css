@@ -1,9 +1,135 @@
-
 /*work sens font form google */
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
- * {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Work Sans', sans-serif;
- }
+* {
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Work Sans', sans-serif;
+}
+
+/* shared styles */
+.btn-primary {
+   border: radius 8px;
+   color: #fff;
+   width: 174px;
+   height: 52px;
+   font-size: 16px;
+   font-weight: 700px;
+   background: #FF5400;
+   text-align: center;
+   border: 0;
+   cursor: pointer;
+
+}
+
+/* /*background styles */
+
+
+.background-img {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+   width: 1170px;
+   height: 500px;
+   border-radius: 16px;
+   background-size: cover;
+   background-position: center;
+   margin: auto;
+   text-align: center;
+}
+
+.icon{
+
+   gap: 24px;
+   display: flex;
+   padding: 16px;
+   text-align: center;
+   align-items: center;
+   border-radius: 8px;
+   margin-left: 150px;
+   margin-right: 150px;
+   background: rgba(255, 255, 255, 0.30);
+}
+input{
+   border-radius: 8px;
+   border: 0px;
+   width: 174px;
+   height: 52px;
+   background: #FFF;
+   color: rgba(19, 19, 24, 0.50);
+   text-align: center;
+   align-items: center;
+   font-size: 16px;
+   font-weight: 400;
+   gap: 24px;
+}
+select{
+   width: 174px;
+   height: 52px;
+   border-radius: 8px;
+   background: #FFF;
+   color: rgba(19, 19, 24, 0.50);
+   font-size: 16px;
+   font-weight: 400;
+   text-align: center;
+}
  
+.boots {
+   justify-content: space-between;
+   display: flex;
+   color: #FFF;
+   font-size: 16px;
+   align-items: center;
+   padding-left: 200px;
+   padding-right: 200px;
+   gap: 24px;
+} 
+ .banner {
+   align-items: center;
+   text-align: center;
+   color: #FFF;
+   font-size: 16px;
+   font-weight: 400px;
+}
+
+.Ten {
+   align-items: center;
+   text-align: center;
+   color: #FFF;
+   font-size: 64px;
+   font-weight: 800PX;
+
+} 
+
+/* .hero {
+   width: 174px;
+   height: 52px;
+}
+
+.zero {
+   width: 174px;
+   height: 52px;
+
+}
+
+.more {
+   width: 174px;
+   height: 52px;
+} */ 
+
+/* responsive media queries */
+/*mobile devices */
+@media screen and (max-width: 576px) {
+   header{
+   padding: 20px;
+   }
+   .Ten{
+      flex-direction: column;
+   }
+   .banner{
+      place-content: column;
+   }
+   .icon{
+      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
+      
+      
+   }
+}
